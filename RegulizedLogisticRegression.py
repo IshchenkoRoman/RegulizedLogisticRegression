@@ -34,6 +34,7 @@ class RLogRegression():
 
 		self._poly = PolynomialFeatures(6)
 		self.features = self._poly.fit_transform(self.x)
+                #np.zeros/ones(28), because len(self.features) = 28
 
 	def sygmoid(self, data = None):
 
